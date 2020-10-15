@@ -14,3 +14,11 @@ print (s)
   
 print ("The reversed string(using loops) is : ",end="") 
 print (reverse(s)) 
+
+def reverse_string(s):
+  reverse=''
+  for  i in range(len(s)-1,0,-1):
+    reverse=reverse+i
+  return reverse
+s=input("Enter any string: ")
+print("Reversed string: ",reverse_string(s))
